@@ -1,0 +1,29 @@
+extends ../layout/index
+block slider
+    .slider
+        h1 Rio de janeiro
+        em aventura
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu felis vel lectus convallis congue. Sed velit ligula, varius ac gravida eu, venenatis sit amet leo. Sed facilisis ante nulla, vitae dapibus leo pretium vel. Pellentesque enim neque, dictum vel tincidunt
+
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu felis vel lectus convallis congue. Sed velit ligula, varius ac gravida eu, venenatis sit amet leo. Sed facilisis ante nulla, 
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="", class="img-fluid")
+        h2.text-center.mb-5 Proximos Viajes
+        include ../layout/partials/viajes
+        .descuento
+            .container
+                .row
+                    .col-md-6
+                        .contenido
+                            h3 5% de descuento
+                            p.titulo Viaje a CAnada
+                            p.fecha 20 de marzo 2019 - 28 de marzo de 2019 
+                            p.precio $2,500 usd
+        .container
+        h2.text-center.my-5 Testimoniales
+        include ../layout/partials/testimoniales
